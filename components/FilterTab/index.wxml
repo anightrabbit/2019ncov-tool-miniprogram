@@ -1,0 +1,15 @@
+<view class="tab">
+  <view class="tab-box">
+    <view class="tab-nav">
+      <view wx:for="{{propData}}" wx:for-item="tab" class="tab-item {{tab.key === curTabKey || curTab[tab.key] > 0 ? 'tab-item-cur':''}}" wx:key="tab.key" data-tab="{{tab.key}}" bindtap="toggleTabNav">{{tab.data[curTab[tab.key]].name || tab.defaultName}}
+        <view class="icon_arrow_down {{isShowPopup && tab.key === curTabKey ? 'icon_arrow_up':''}}"></view>
+      </view>
+    </view>
+    <view class="tab-content">
+      <ul wx:key="item.key" wx:for="{{propData}}" wx:for-item="item" class="{{item.key === curTabKey ? 'show' : 'hide'}}">
+        <li class="tab-content-item border1px {{subitem.id === (curTab[curTabKey] || item.data[0].id) ? 'tab-item-cur':''}}" wx:key="subitem.id" wx:for="{{item.data}}" wx:for-item="subitem" bindtap="toggleTabItem" data-tab="{{subitem}}">{{subitem.asName || subitem.name }}</li>
+      </ul>
+    </view>
+  </view>
+  <view wx:if="{{isShowPopup}}" class="popup" bindtap="closePopup"></view>
+</view>

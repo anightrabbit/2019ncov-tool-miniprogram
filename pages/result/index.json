@@ -1,0 +1,13 @@
+{
+  "navigationBarBackgroundColor": "#068a90",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "查询结果",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#fff",
+  "usingComponents": {
+  	"filtertab-component": "../../components/FilterTab/index",
+  	"list-component": "../../components/List/index",
+    "circleloading-component": "../../components/CircleLoading/index"
+  },
+  "onReachBottomDistance": 50
+}

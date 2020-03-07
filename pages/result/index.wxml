@@ -1,0 +1,10 @@
+<view class="ncov2019">
+	<filtertab-component prop-data="{{filterData}}" prop-filter="{{query}}" bind:tapbuttonevent="changeFilterTab"></filtertab-component>
+	<view class="ncov2019-list" wx:if="{{listData.length}}">
+  	<list-component prop-data="{{item}}" wx:for="{{listData}}" wx:for-item="item" wx:key="{{item.id}}"></list-component>		
+	</view>
+	<circleloading-component wx:if="{{loading}}"></circleloading-component>
+  <view class="endWrap" wx:if="{{noMoreData}}">
+    <text>暂无更多数据。</text>
+  </view>
+</view>

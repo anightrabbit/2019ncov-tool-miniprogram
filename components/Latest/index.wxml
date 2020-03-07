@@ -1,0 +1,20 @@
+<view wx:if="{{propData.length}}" class="ncov2019-latest layout-card" style="padding-bottom: 0">
+  <view class="ncov2019-latest-head border1px" bindtap="bindToList">
+    <view class="ncov2019-latest-title">
+      <text class="h2">最新患者同乘信息公示</text>
+      <text class="gray span">全部</text>
+    </view>
+    <p class="gray" wx:if="{{propUpdate}}">更新时间：{{propUpdate}}</p>
+  </view>
+  <ul class="ncov2019-latest-list">
+    <li wx:for="{{propData}}" wx:for-item="item" data-type="{{item.t_type}}" data-id="{{item.id}}" bindtap="bindToList" class="border1px">
+      <text class="latest-item-date">{{item.t_date}}</text>
+      <p class="latest-item-info">
+        <text>{{types[item.t_type]}}</text>
+        <text wx:if="item.t_no">{{item.t_no}}</text>
+        <text wx:if="item.t_memo">{{item.t_memo}}</text>
+        <text wx:if="item.t_pos_start && item.t_pos_end">{{item.t_pos_start}}-{{item.t_pos_end}}</text>
+      </p>
+    </li>
+  </ul>
+</view>

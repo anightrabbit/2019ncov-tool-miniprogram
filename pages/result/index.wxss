@@ -1,0 +1,13 @@
+.ncov2019 {
+	padding-top:40px;
+}
+.endWrap {
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 4.343999999999999vw;
+  color: #999;
+  letter-spacing: 0;
+  line-height: 5.953333333333333vw;
+  font-weight: 400;
+  padding: 3vh 0;
+}

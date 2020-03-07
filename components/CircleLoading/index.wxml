@@ -1,0 +1,3 @@
+<view class="circleLoadingWrap">
+  <text class="circle" wx:for="{{propCircles}}" wx:for-item="circle" wx:key="circle" style="background:{{propColor}}"></text>
+</view>

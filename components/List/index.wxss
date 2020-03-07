@@ -1,0 +1,104 @@
+@import "../../app.wxss";
+.ncov2019-item {
+	position: relative;
+}
+.ncov2019-item-top {
+  padding: 4.050666666666666vw 4.102666666666667vw 3.4626666666666663vw;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.ncov2019-item-top .ncov2019-item-title {
+  vertical-align: middle;
+  flex: 1 1 auto;
+  max-width: 82.696vw;
+  margin-right: 4.826666666666667vw;
+}
+.ncov2019-item-title .h2 {
+  font-family: PingFangSC-Regular;
+  font-size: 4.343999999999999vw;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 5.953333333333333vw;
+  font-weight: 400;
+  vertical-align: middle;
+  word-break: break-word;
+  text-align: justify;
+}
+.ncov2019-item-title .p {
+  margin-top: 0.5906666666666667vw;
+    font-family: PingFangSC-Regular;
+    font-size: 3.3786666666666667vw;
+    color: #999;
+    letter-spacing: 0;
+    line-height: 5.309333333333333vw;
+}
+.icon-collapse-arrow-down {
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+    transition: -webkit-transform .2s ease-in-out;
+    -o-transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+.icon-collapse-arrow-up {
+  -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.ncov2019-item-bottom {
+  height: 0;
+  overflow: hidden;
+}
+.ncov2019-item-bottom-show {
+  height: auto;
+  animation: showContent .25s;
+  margin: 0 0 2.4133333333333336vw 0;
+}
+.ncov2019-item-bottom .ncov2019-item-more {
+  display: flex;
+  overflow: hidden;
+  font-size: 4.343999999999999vw;
+  padding: 0 4.102666666666667vw;
+}
+.ncov2019-item-more-list {
+  width: 0;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  position: relative;
+}
+.ncov2019-item-more-column {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 3.8613333333333335vw;
+  line-height: 5.792vw;
+  margin-top: 0vw;
+  margin-bottom: 1.448vw;
+}
+.ncov2019-item-more-column text {
+  font-size: 3.8613333333333335vw!important;
+  color: #999;
+}
+.ncov2019-item::after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 4.102666666666667vw;
+	right: 4.102666666666667vw;
+  height: 1px;
+  background-color: #f5f5f5;
+}
+
+@keyframes showContent {
+    0% {
+        opacity: .6;
+        -webkit-transform: translate(0, -4.8vw);
+                transform: translate(0, -4.8vw);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate(0, 0);
+                transform: translate(0, 0);
+    }
+}

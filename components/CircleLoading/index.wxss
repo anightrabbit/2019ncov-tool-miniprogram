@@ -1,0 +1,33 @@
+.circleLoadingWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:20px 0;
+}
+.circleLoadingWrap .circle {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  border-radius: 50%;
+  opacity: 0.3;
+  animation: circleAnimation 3s linear infinite;
+}
+.circleLoadingWrap .circle:nth-child(2) {
+  animation-delay: 1s;
+}
+.circleLoadingWrap .circle:nth-child(3) {
+  animation-delay: 2s;
+}
+.circleLoadingWrap .circle:last-child {
+  margin-right: 0;
+}
+@keyframes circleAnimation {
+  0%, 100% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  40% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}

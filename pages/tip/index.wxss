@@ -1,0 +1,11 @@
+.tip {
+	font: 3.381333333333333vw/5.474666666666667vw Arial, Helvetica, sans-serif;
+  color: #000;
+  padding: 3.381333333333333vw 4.1066666666666665vw 7.4879999999999995vw 4.1066666666666665vw;
+}
+.tip-title {
+	margin-bottom: 8.052vw;
+}
+.tip-info {
+	margin-bottom: 4.830666666666667vw;
+}

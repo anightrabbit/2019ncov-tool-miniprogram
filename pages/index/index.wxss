@@ -1,0 +1,29 @@
+.ncov2019-banner {
+  position: relative;
+  background-image: linear-gradient(#b1f1f3, #FFF);
+  height: 51.449333333333335vw;
+  box-sizing: border-box;
+  padding-top: 24.074666666666666vw;
+  padding-left: 4.1066666666666665vw;
+}
+.ncov2019-banner .h1 {
+  font-size: 7.729333333333333vw;
+  font-weight: 700;
+  display: block;
+  color: #068a90;
+}
+.ncov2019-banner .p {
+  display: block;
+  font-size: 3.381333333333333vw;
+  color: #068a90;
+}
+.ncov2019-notice {
+  padding: 15px 15px;
+  font-size: 14px;
+  background-color: rgba(250,100,0,0.06);
+  color: #fa6400;
+  line-height: 14px;
+}
+.ncov2019-content {
+  padding: 0 15px;
+}

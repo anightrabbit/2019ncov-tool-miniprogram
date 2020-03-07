@@ -1,0 +1,9 @@
+<view class="ncov2019">
+  <!-- <include src="banner.wxml" /> -->
+  <include src="warn.wxml" />
+  <view class="ncov2019-content">
+    <search-component prop-types="{{types}}" bind:tapbuttonevent="onSearch"></search-component>
+    <latest-component prop-data="{{latest}}" prop-update="{{updateTime}}" bind:tapbuttonevent="onLatest"></latest-component>
+    <include src="tip.wxml" />
+  </view>
+</view>

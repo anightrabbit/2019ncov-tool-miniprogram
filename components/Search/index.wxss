@@ -1,0 +1,37 @@
+@import "../../app.wxss";
+.ncov2019-fieldWrap .label {
+  padding-right: 12px;
+  line-height: 94rpx;
+}
+.ncov2019-fieldWrap picker {
+  display: block;
+  flex: 1;
+  line-height: 94rpx;
+}
+.ncov2019-fieldWrap .field {
+  color: #666;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.ncov2019-fieldWrap input {
+  color: #000;
+}
+.ncov2019-fieldWrap .picker-text {
+  display: block;
+  /*width: 100%;*/
+  line-height: 94rpx;
+  color: #000;
+}
+.search-button {
+  display: flex;
+  width: 100% !important;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  margin-top: 20px;
+  background-color: #068a90;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}

@@ -1,0 +1,24 @@
+<view class="ncov2019-item" wx:if="{{propData.id}}">
+  <view class="ncov2019-item-top" bindtap="toggleShowMore">
+    <view class="ncov2019-item-title">
+      <view class="h2">{{propData.t_date}} <text class="gray">|</text> {{types[propData.t_type]}} {{propData.t_no}} {{propData.t_no_sub}} {{propData.t_memo}}</view>
+      <view class="p">出发：{{propData.t_pos_start || '不详'}}</view>
+      <view class="p">到达：{{propData.t_pos_end || '不详'}}</view>
+    </view>
+    <text class="icon_arrow_down {{isShowMore ? 'icon_arrow_up' : ''}}"></text>
+  </view>
+  <view class="ncov2019-item-bottom {{isShowMore ? 'ncov2019-item-bottom-show' : ''}}">
+    <view class="ncov2019-item-more">
+      <view class="ncov2019-item-more-list">
+        <view class="ncov2019-item-more-column">
+          <text>发布时间</text>
+          <text class="t-right">{{propData.created_at}}</text>
+        </view>
+        <view class="ncov2019-item-more-column">
+          <text>线索来源</text>
+          <text class="blue t-right">{{propData.who}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,30 @@
+<view class="ncov2019-fieldWrap">
+  <view class="field icon_arrow border1px">
+    <label class="label">出行日期</label>
+    <picker mode="date" value="{{form.date}}" start="2019-01-01" end="2020-12-31" bindchange="bindDateChange">
+      <view class="picker-text">
+        {{form.date || '全部'}}
+      </view>
+    </picker>
+  </view>
+  <view class="field icon_arrow border1px">
+    <label class="label">出行交通</label>
+    <picker mode="selector" bindchange="bindTypeChange" value="{{form.type}}" range="{{propTypes}}">
+      <view class="picker-text">
+        {{propTypes[form.type || 0]}}
+      </view>
+    </picker>
+  </view>
+  <view class="field border1px">
+    <label class="label">出行信息</label>
+    <input
+      type="text"
+      value="{{form.info}}"
+      maxlength="40"
+      bindinput="bindKeyInput"
+      placeholder="车次/车牌/航班号/地区等（选填）"
+      placeholder-style="z-index:0;font-size:14px;color:rgba(156,156,156,1);"
+    />
+  </view>
+  <button class="search-button" bindtap="bindSearch">查询</button>
+</view>

@@ -1,0 +1,11 @@
+{
+  "navigationBarBackgroundColor": "#068a90",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "患者同乘信息查询",
+  "backgroundTextStyle": "light",
+  "backgroundColor": "#fff",
+  "usingComponents": {
+  	"search-component": "../../components/Search/index",
+  	"latest-component": "../../components/Latest/index"
+  }
+}

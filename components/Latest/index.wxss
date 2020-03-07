@@ -1,0 +1,44 @@
+@import "../../app.wxss";
+.ncov2019-latest-head {
+    padding-bottom: 15px;
+    font-size: 14px;
+}
+.ncov2019-latest-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ncov2019-latest-title h2 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+}
+.ncov2019-latest-title span {
+  font-size: 13px;
+  color: #999;
+}
+.ncov2019-latest-list {
+  font-size: 13px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.ncov2019-latest-list li {
+  display: flex;
+  position: relative;
+  line-height: 40px;
+}
+.latest-item-date {
+  width: 60px;
+  color: #999;
+}
+.latest-item-info {
+  flex: 1;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.latest-item-info span {
+  margin-right: 8px;
+}
