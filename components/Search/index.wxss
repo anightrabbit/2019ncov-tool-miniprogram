@@ -16,6 +16,8 @@
 }
 .ncov2019-fieldWrap input {
   color: #000;
+  display: block;
+  flex: 1;
 }
 .ncov2019-fieldWrap .picker-text {
   display: block;
