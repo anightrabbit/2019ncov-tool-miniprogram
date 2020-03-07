@@ -20,6 +20,7 @@ Component({
     curTabKey: '',
     curTab: {},
     isShowPopup: false,
+    data:[],
   },
 
   /**
@@ -54,8 +55,15 @@ Component({
   },
 
   ready: function() {
+    const { propData, propFilter} = this.data;
+    if(propFilter.id) {
+      const filterData = propData[0].data.filter(item => propFilter.type == item.id);
+      propData[0].data = filterData;
+      propData[0].defaultName = filterData[0].name;
+    }
     this.setData({
-      curTab: this.data.propFilter
+      curTab: this.data.propFilter,
+      data: propData
     });
   }
 })
