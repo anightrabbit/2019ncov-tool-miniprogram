@@ -9,5 +9,6 @@
 
 >  该小程序使用的服务API是我上一个项目[2019ncov-tool-api](https://github.com/anightrabbit/2019ncov-tool-api)，注释较少，如需了解请至[Express官网](https://www.expressjs.com.cn/)
 
+可线上查看demo：
 
 ![小程序二维码](./qrcode.jpeg)
